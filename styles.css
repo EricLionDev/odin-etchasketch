@@ -1,0 +1,33 @@
+html {
+  background-color: #1c1d1f;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header__title {
+  background-color: #1c1d1f;
+  color: #f2f2f2;
+  font-size: 1.3rem;
+  padding: 15px 2.5% 1% 2.5%;
+  border-bottom: #2a2a2c 1px solid;
+  position: sticky;
+  top: 0px;
+  margin: 0px;
+}
+
+.header__title:hover {
+  background-color: #26282b;
+}
+
+.small__header {
+  font-size: 0.9rem;
+}
