@@ -24,10 +24,25 @@ body {
   margin: 0px;
 }
 
+#sketch__container {
+  margin: 100px auto;
+  border: #f3f3f3 4px dashed;
+  height: 1000px;
+  width: 1000px;
+  aspect-ratio: 1/1;
+}
+
 .header__title:hover {
   background-color: #26282b;
 }
 
 .small__header {
   font-size: 0.9rem;
+}
+
+.needs__reset {
+  border: #44171b 5px solid;
+}
+
+.container__item {
 }
