@@ -1,7 +1,3 @@
-html {
-  background-color: #1c1d1f;
-}
-
 html,
 body {
   margin: 0;
@@ -12,6 +8,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  background-color: #1c1d1f;
 }
 .header__title {
   background-color: #1c1d1f;
@@ -25,13 +22,17 @@ body {
 }
 
 #sketch__container {
-  margin: 100px auto;
-  border: #f3f3f3 4px dashed;
-  height: 1000px;
-  width: 1000px;
-  aspect-ratio: 1/1;
+  margin: 50px auto;
+  border: #f3f3f3 4px solid;
+  height: 80%;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(16, 2fr);
+  grid-template-rows: repeat(16, 2fr);
 }
-
+.header__size {
+  border: none;
+}
 .header__title:hover {
   background-color: #26282b;
 }
@@ -44,5 +45,10 @@ body {
   border: #44171b 5px solid;
 }
 
-.container__item {
+#container__cell {
+  border: black 1px solid;
+}
+
+.black {
+  background-color: black;
 }

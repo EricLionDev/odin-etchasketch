@@ -5,26 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <script src="app.js"></script>
+
     <title>Etch-A-Sketch</title>
   </head>
   <div class="nav">
     <p class="header__title">etch-a-sketch</p>
-    <label class="header__title"
-      >size <span class="small__header"></span>:
-      <input
-        type="text"
-        id="header__size"
-        class="size"
-        min="1"
-        max="64"
-        placeholder="1 - 64"
-        onkeyup="recommendReset()"
-        onclick="recommendReset()"
-    /></label>
+    <button class="header__title header__size" onclick="changeSize()">
+      change size
+    </button>
     <p class="header__title" id="header__reset">reset</p>
   </div>
-  <body>
+  <body onload="generateGrid(16)">
     <div id="sketch__container"></div>
   </body>
+  <script src="app.js" defer></script>
 </html>
